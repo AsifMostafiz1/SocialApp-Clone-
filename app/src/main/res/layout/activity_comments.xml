@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baground_color"
+    tools:context=".Activity.CommentsActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/comment_activity_appBar"
+        ></include>
+
+
+    <TextView
+        android:layout_below="@+id/comment_activity_appBar"
+        android:id="@+id/comments"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/widget_edittext_dark">
+
+    </TextView>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/comments"
+        android:id="@+id/commentRecyclerViewID"
+        android:layout_alignParentStart="true"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_below="@+id/commentRecyclerViewID"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       >
+        <EditText
+            android:id="@+id/commentsInputStringID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:inputType="textMultiLine"
+            android:hint="Write a comment here"
+            android:background="@drawable/custom_edit_text"
+           ></EditText>
+
+        <ImageView
+            android:id="@+id/commentSentBTN"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/post_comment"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            ></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

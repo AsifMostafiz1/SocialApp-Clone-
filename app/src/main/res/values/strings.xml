@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Social App</string>
+    <string name="drawer_open">Social App</string>
+    <string name="drawer_close">Social App</string>
+</resources>

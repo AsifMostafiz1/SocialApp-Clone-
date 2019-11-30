@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baground_color"
+    tools:context=".Activity.CommentsActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/messageActivityToolBar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/colorPrimary">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginRight="15dp">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:gravity="center_vertical">
+
+               <TextView
+                   android:id="@+id/messageActivityUserProfileName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Asif Mostafiz"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:textColor="@android:color/background_dark">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/messageActivityLastSeenMessage"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Last Seen: 12/04/2019"
+                   android:textSize="14sp"
+               >
+
+               </TextView>
+
+           </LinearLayout>
+
+
+          <com.mikhaellopez.circularimageview.CircularImageView
+              android:id="@+id/messageActivityUserProfileImage"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              app:civ_border_color="@color/pureWhite"
+              app:civ_border_width=".1dp"
+              android:src="@drawable/profile"
+              android:layout_marginTop="7dp"></com.mikhaellopez.circularimageview.CircularImageView>
+
+       </LinearLayout>
+   </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageActivityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/comments"
+        android:layout_alignParentStart="true"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/messageActivityCameraImageView"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/camera"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            ></ImageView>
+        <EditText
+            android:id="@+id/messageActivityInputEditText"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:inputType="textMultiLine"
+            android:hint="Write a comment here"
+            android:background="@drawable/custom_edit_text"
+            ></EditText>
+
+        <ImageView
+
+            android:id="@+id/messageActivityMessageSendBTN"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/post_comment"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            ></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#AB4E4B4E"
+    tools:context=".Activity.SettingsActivity">
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/friends_profile_page_app_bar"></include>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+
+                >
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/profile_activity_profile_image"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="60dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="User Name"
+                    android:textColor="@color/pureWhite"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/pureWhite"
+
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/profile_userFullNameTV"
+                    ></TextView>
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/profile"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/_friends_profile_activity_profile_image">
+
+                </com.mikhaellopez.circularimageview.CircularImageView>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/profile_activity_profile_image"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="User Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/pureWhite"
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/pureWhite"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/friends_profile_userFullName"
+                    ></TextView>
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/profile_activity_profile_image"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="40dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Hey I am an Android Developer"
+                    android:textColor="@color/pureWhite"
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/pureWhite"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/friends_profile_userStatus"
+                    ></TextView>
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/profile_activity_profile_image"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="40dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Gender: Male"
+                    android:textColor="@color/pureWhite"
+                    android:textSize="20sp"
+
+                    android:backgroundTint="@color/pureWhite"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/friends_profile_userGender"
+                    ></TextView>
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/profile_activity_profile_image"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="40dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Country: Bangladesh"
+                    android:textColor="@color/pureWhite"
+                    android:textSize="20sp"
+
+                    android:backgroundTint="@color/pureWhite"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/friends_profile_userCountry"
+                    ></TextView>
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/profile_activity_profile_image"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="40dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Relationship: Single"
+                    android:textColor="@color/pureWhite"
+                    android:textSize="20sp"
+
+                    android:backgroundTint="@color/pureWhite"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/friends_profile_userRelationship"
+                    ></TextView>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/friends_profile_accept_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:text="Send Request"
+            android:textSize="18sp"
+            android:textColor="@color/pureWhite"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button1"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/friends_profile_decline_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:text="Decline Request"
+            android:textColor="@color/pureWhite"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+
+            android:background="@drawable/custom_button1"
+            >
+
+        </Button>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

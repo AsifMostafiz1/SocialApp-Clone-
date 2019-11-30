@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        app:civ_border_width=".1dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/profile"
+        android:id="@+id/message_user_profile_image">
+    </com.mikhaellopez.circularimageview.CircularImageView>
+
+    <TextView
+        android:id="@+id/message_receiver_text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receiver Message"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:padding="10dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/custom_edit_text"
+        android:layout_toEndOf="@+id/message_user_profile_image">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/message_sender_text_message"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sender Message"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_edit_text"
+       ></TextView>
+
+    <ImageView
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/message_online_offLine_State"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_online"></ImageView>
+
+
+</RelativeLayout>
